@@ -27,12 +27,32 @@ class Problem_214 {
     {
                         // This operation reduces length
                          // of every sequence of 1s by one.
-        number = (number & (number << 1));
-        count++;
+        number = (number & (number << 1));// Implementing Brain Kernighan's Algorithm  
+        count++;                          // "dropping the least segnificant bit"
     }
     return count;
 }
-public static void main(String[] args){
+public static void main(String[] args){ // 
+
+   System.out.println(find_length(-1));
+   System.out.println(find_length(0));
+   System.out.println(find_length(-2));
    System.out.println(find_length(5));
+   System.out.println(find_length(6));
+   System.out.println(find_length(7));
+   System.out.println(find_length(8));
+   System.out.println(find_length(2147483647));
+
+
 }
+/*Testing -1 -> 32
+           0 -> 0 
+          -2 -> 31
+           5 -> 1
+           6 -> 2
+           7 -> 3
+           8 -> 1
+           2,147,483,647-> ERROR: JDWP Unable to get JNI 1.2 environment, jvm->GetEnv() return code = -2
+JDWP exit error AGENT_ERROR_NO_JNI_ENV(183):  [util.c:840] lol
+           */
 }
