@@ -17,15 +17,22 @@
  * P.S. Looking to commit to a new habit? Check out Daily Habit Mail to help
  * keep yourself accountable!
  */
-class Problem_214{
+class Problem_214 {
     static int  find_length(int number){
-        int max_length=0;
-        while(number){  
-        max_length += 1;
-        number = number & (n << 1);
-        }
-    return max_length;
+        int count = 0;
+
+    // Count the number of iterations to
+    // reach n = 0.
+    while (number!=0)
+    {
+                        // This operation reduces length
+                         // of every sequence of 1s by one.
+        number = (number & (number << 1));
+        count++;
+    }
+    return count;
+}
+public static void main(String[] args){
+   System.out.println(find_length(5));
 }
 }
-
-

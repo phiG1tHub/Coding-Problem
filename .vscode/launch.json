@@ -6,6 +6,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Problem_214",
+            "request": "launch",
+            "mainClass": "Problem_214"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - driver",
             "request": "launch",
             "mainClass": "driver"
