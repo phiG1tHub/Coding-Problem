@@ -53,5 +53,5 @@ public static void main(String[] args){ //
            7 -> 3
            8 -> 1
            2,147,483,647-> 31 sometimes ERROR: JDWP Unable to get JNI 1.2 environment, jvm->GetEnv() return code = -2
-JDWP exit error AGENT_ERROR_NO_JNI_ENV(183):  [util.c:840]
+JDWP exit error AGENT_ERROR_NO_JNI_ENV(183):  [util.c:840]*/
 }
