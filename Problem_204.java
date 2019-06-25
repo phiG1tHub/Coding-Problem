@@ -34,7 +34,7 @@ class Problem_204 {
             if (this.root == null) {
                 return 0;
             } else {
-                return (1+ count(root.left) + count(root.right));
+                return (1 + count(root.left) + count(root.right));
             }
         };
 
